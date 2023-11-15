@@ -366,6 +366,14 @@ type RootTranslation = {
 			 */
 			gameData: string
 			/**
+			 * Debug
+			 */
+			debug: string
+			/**
+			 * Activate the debug logs. Warning: this may worsen the performance
+			 */
+			activateDebugLogs: string
+			/**
 			 * Language
 			 */
 			language: string
@@ -1443,6 +1451,14 @@ export type TranslationFunctions = {
 			 * Game data
 			 */
 			gameData: () => LocalizedString
+			/**
+			 * Debug
+			 */
+			debug: () => LocalizedString
+			/**
+			 * Activate the debug logs. Warning: this may worsen the performance
+			 */
+			activateDebugLogs: () => LocalizedString
 			/**
 			 * Language
 			 */
